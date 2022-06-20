@@ -57,6 +57,7 @@ class Blackberry
     function __destruct()
     {
         echo "- DESTROYED : " . $this->name . " includes a " . $this->chipset . " chipset and " . $this->internalMemory . "GB of internal memory. It uses " . $this->keyboard . " Keyboard -<br>";
+        
     }
 }
 

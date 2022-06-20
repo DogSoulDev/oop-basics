@@ -13,22 +13,23 @@ class Mobile
     public $internalMemory;
 
     // methods for getting properties
-    public function getName()
+    public function getName( )
+    {
+        return $this->name;
+    }
     {
         return "--- " . $this->name . " ---";
     }
 
-    public function getChipset()
+    public function getChipset( )
     {
         return $this->chipset;
     }
-
-    public function getInternalMemory()
+    public function getInternalMemory( )
     {
         return $this->internalMemory;
     }
 }
-
 
 $modernMobile = new Mobile();
 $modernMobile->name = "Samsung s20";
@@ -59,3 +60,4 @@ echo "<br>";
 echo $modernMobile->chipset;
 echo "<br>";
 echo $modernMobile->internalMemory;
+

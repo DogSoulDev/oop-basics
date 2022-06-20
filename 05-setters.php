@@ -12,7 +12,8 @@ class Mobile
     public $chipset;
     public $internalMemory;
 
-    public function getInternalMemory()
+
+    public function getInternalMemory( )
     {
         return $this->internalMemory;
     }
@@ -23,6 +24,7 @@ class Mobile
         echo "* CHANGED internal memory from " . $this->internalMemory;
         $this->internalMemory = $internalMemory;
         echo " to " . $this->internalMemory;
+        echo "<br>";
     }
 }
 
@@ -32,6 +34,7 @@ $modernMobile = new Mobile();
 $modernMobile->name = "Samsung s20";
 $modernMobile->chipset = "Exynos";
 $modernMobile->internalMemory = 128;
+
 
 
 echo "<br>";

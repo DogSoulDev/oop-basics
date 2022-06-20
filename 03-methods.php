@@ -9,14 +9,16 @@
 class Mobile
 {
     public $name;
-    public $chipset;
-    public $internalMemory;
+    public $camera;
+    public $price;
+    public $color;
 
     // method that returns class properties in a string.
-    public function showSpecs()
+    public function showSpecs( )
     {
-        return $this->name . " includes a " . $this->chipset . " chipset and " . $this->internalMemory . "GB of internal memory";
+        return "Name: " . $this->name . " Camera: " . $this->camera . " Price: " . $this->price . " Color: " . $this->color;
     }
+    
 }
 
 
