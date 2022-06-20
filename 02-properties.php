@@ -12,26 +12,33 @@ class Mobile {
     public $internalMemory;
 }
 
-$modernMobile = new Mobile();
+$newMobile = new Mobile();
+$newMobile->name = 'Samsung Galaxy S10';
+$newMobile->chipset = 'Exynos 9810';
+$newMobile->internalMemory = '128GB';
 
 // in OOP and PHP we use the arrow operator ( -> ) for accessing properties
 
 // we can assign those public properties in our class with this syntax
-$modernMobile->name = "Samsung s20";
-$modernMobile->chipset = "Exynos";
-$modernMobile->internalMemory = 128;
+$newMobile->name = "Samsung s20";
+$newMobile->chipset = "Exynos";
+$newMobile->internalMemory = 128;
 
 echo "<br>";
 
 // we can also access properties value by the arrow operator
-echo $modernMobile->chipset;
+echo $newMobile->chipset;
+echo $newMobile->internalMemory;
+echo "<br>";
+
 
 // what happens if we assign a non existing value or a wrong value?
-$modernMobile->ramMemory = 1;
-$modernMobile->internMemory = 8;
+$newMobile->ramMemory = 1;
+$newMobile->internMemory = 8;
+
 
 echo "<pre>";
-var_dump($modernMobile);
+var_dump($newMobile);
 echo "</pre>";
 
 echo "<br>";
